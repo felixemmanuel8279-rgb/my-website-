@@ -1,22 +1,99 @@
 body {
-    font-family: Arial;
-    padding: 20px;
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  background: darkblue!important;
 }
 
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #020617;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #38bdf8;
+  border: none;
+  color: black;
+  border-radius: 10px;
+}
+
+/* SECTION */
+section {
+  padding: 30px 20px;
+}
+
+/* PROJECT */
+.project-card {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.project-card a {
+  color: #38bdf8;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #38bdf8;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* CONTACT */
 input {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
+  display: block;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
 }
 
 button {
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
+  padding: 10px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  border-radius: 10px;
 }
 
-.card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
 }
