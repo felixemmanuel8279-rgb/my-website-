@@ -5,20 +5,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
   <script type="module" src="script.js"></script>
+<body>
   
-<!-- NAVBAR -->
-<nav>
-  <h2>Felix.dev</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<div class="container">
+
+  <h1>Felix Emmanuel</h1>
+  <p class="subtitle">Web Developer</p>
+
+  <input id="title" placeholder="Project Title">
+  <input id="desc" placeholder="Description">
+
+  <button onclick="addProject()">Add Project</button>
+
+  <div id="projects"></div>
+
+  <div class="buttons">
+    
+    <button onclick="openWhatsApp()">WhatsApp</button>
+    <button onclick="makeCall()">Call</button>
+    <button onclick="sendEmail()">Email</button>
+  </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
 
 <!-- HERO -->
 <section class="hero">
@@ -77,6 +90,8 @@
 <footer>
   <p>© 2026 Felix Emmanuel</p>
 </footer>
+
+<script type="module" src="script.js"></script>
 
 </body>
 </html>
