@@ -85,10 +85,11 @@ input {
 }
 
 button {
-  padding: 10px;
   border: none;
   background: #38bdf8;
   color: black;
+  margin: 8px;
+  padding: 10px 15px;
   border-radius: 10px;
 }
 
