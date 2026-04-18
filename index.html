@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Felix Emmanuel | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Welcome to My Website</h1>
+<!-- NAVBAR -->
+<nav>
+  <h2>Felix.dev</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-<input type="text" id="title" placeholder="Project Title">
-<input type="text" id="desc" placeholder="Description">
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi, I'm Felix Emmanuel</h1>
+  <p>Web Developer | Building modern business websites</p>
+  <button onclick="scrollToSection('projects')">View My Work</button>
+</section>
 
-<button onclick="addProject()">Add Project</button>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate web developer focused on building responsive,
+    user-friendly websites for businesses. I specialize in creating
+    modern UI designs and functional web applications.
+  </p>
+</section>
 
-<div id="projects"></div>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>My Projects</h2>
 
-<br><br>
+  <div class="project-card">
+    <h3>🍽 Relish Kitchen</h3>
+    <p>Online food ordering website with cart, WhatsApp ordering and payment integration.</p>
+    <a href="https://relishkitchen.netlify.app" target="_blank">View Project</a>
+  </div>
 
-<button onclick="openWhatsApp()">WhatsApp</button>
-<button onclick="makeCall()">Call</button>
-<button onclick="sendEmail()">Email</button>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Responsive Design</span>
+    <span>UI Design</span>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <input id="userName" placeholder="Your Name">
+  <input id="userMessage" placeholder="Your Message">
+
+  <button onclick="sendMessage()">Send Message</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Felix Emmanuel</p>
+</footer>
 
 <script src="script.js"></script>
 
